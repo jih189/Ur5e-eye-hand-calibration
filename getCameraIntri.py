@@ -37,6 +37,7 @@ for fname in images:
 cv2.destroyAllWindows()
 ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1],None,None)
 print "mtx"
+print type(mtx)
 print mtx
 print "dist"
 print dist

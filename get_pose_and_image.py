@@ -12,6 +12,11 @@ import numpy as np
 import math
 
 
+'''    video.set(3, 2592)
+    video.set(4, 1944)
+    video.set(5, 15)
+    codec = cv2.VideoWriter_fourcc("M","J","P","G")
+    video.set(6, codec)'''
  
 if __name__ == '__main__':
 
@@ -20,11 +25,7 @@ if __name__ == '__main__':
     print "press t to take the image"
 
     video = cv2.VideoCapture(0)
-    video.set(3, 2592)
-    video.set(4, 1944)
-    video.set(5, 15)
-    codec = cv2.VideoWriter_fourcc("M","J","P","G")
-    video.set(6, codec)
+
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 
     # prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(6,5,0)

@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E remove -f
+RM = /usr/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,43 +58,6 @@ CMAKE_SOURCE_DIR = /home/jiaming/cali/calibration
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/jiaming/cali/calibration/build
-
-#=============================================================================
-# Target rules for target CMakeFiles/get-chessboard-pose.dir
-
-# All Build rule for target.
-CMakeFiles/get-chessboard-pose.dir/all:
-	$(MAKE) -f CMakeFiles/get-chessboard-pose.dir/build.make CMakeFiles/get-chessboard-pose.dir/depend
-	$(MAKE) -f CMakeFiles/get-chessboard-pose.dir/build.make CMakeFiles/get-chessboard-pose.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaming/cali/calibration/build/CMakeFiles --progress-num=3,4 "Built target get-chessboard-pose"
-.PHONY : CMakeFiles/get-chessboard-pose.dir/all
-
-# Include target in all.
-all: CMakeFiles/get-chessboard-pose.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/get-chessboard-pose.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaming/cali/calibration/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/get-chessboard-pose.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaming/cali/calibration/build/CMakeFiles 0
-.PHONY : CMakeFiles/get-chessboard-pose.dir/rule
-
-# Convenience name for target.
-get-chessboard-pose: CMakeFiles/get-chessboard-pose.dir/rule
-
-.PHONY : get-chessboard-pose
-
-# clean rule for target.
-CMakeFiles/get-chessboard-pose.dir/clean:
-	$(MAKE) -f CMakeFiles/get-chessboard-pose.dir/build.make CMakeFiles/get-chessboard-pose.dir/clean
-.PHONY : CMakeFiles/get-chessboard-pose.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/get-chessboard-pose.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/convertAngle.dir
@@ -130,6 +93,43 @@ CMakeFiles/convertAngle.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/convertAngle.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/get-chessboard-pose.dir
+
+# All Build rule for target.
+CMakeFiles/get-chessboard-pose.dir/all:
+	$(MAKE) -f CMakeFiles/get-chessboard-pose.dir/build.make CMakeFiles/get-chessboard-pose.dir/depend
+	$(MAKE) -f CMakeFiles/get-chessboard-pose.dir/build.make CMakeFiles/get-chessboard-pose.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaming/cali/calibration/build/CMakeFiles --progress-num=3,4 "Built target get-chessboard-pose"
+.PHONY : CMakeFiles/get-chessboard-pose.dir/all
+
+# Include target in all.
+all: CMakeFiles/get-chessboard-pose.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/get-chessboard-pose.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaming/cali/calibration/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/get-chessboard-pose.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaming/cali/calibration/build/CMakeFiles 0
+.PHONY : CMakeFiles/get-chessboard-pose.dir/rule
+
+# Convenience name for target.
+get-chessboard-pose: CMakeFiles/get-chessboard-pose.dir/rule
+
+.PHONY : get-chessboard-pose
+
+# clean rule for target.
+CMakeFiles/get-chessboard-pose.dir/clean:
+	$(MAKE) -f CMakeFiles/get-chessboard-pose.dir/build.make CMakeFiles/get-chessboard-pose.dir/clean
+.PHONY : CMakeFiles/get-chessboard-pose.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/get-chessboard-pose.dir/clean
 
 .PHONY : clean
 
